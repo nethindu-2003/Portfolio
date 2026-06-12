@@ -98,7 +98,7 @@ export default function Projects() {
 
           <div className="projects__viewport">
             <div className="projects__track" id="projectsTrack" ref={trackRef}>
-              <a className="project-card" href="https://github.com/nethindu-2003" target="_blank"
+              <a className="project-card" href="https://github.com/nethindu-2003/SkyLite.git" target="_blank"
                 rel="noopener noreferrer">
                 <div className="project-card__meta">
                   <span>01 / 07</span>
@@ -116,7 +116,7 @@ export default function Projects() {
                 </div>
               </a>
 
-              <a className="project-card" href="https://github.com/nethindu-2003" target="_blank"
+              <a className="project-card" href="https://github.com/nethindu-2003/doctor-c-dental-system.git" target="_blank"
                 rel="noopener noreferrer">
                 <div className="project-card__meta">
                   <span>02 / 07</span>
@@ -134,7 +134,7 @@ export default function Projects() {
                 </div>
               </a>
 
-              <a className="project-card" href="https://github.com/nethindu-2003" target="_blank"
+              <a className="project-card" href="https://github.com/nethindu-2003/convolink-chat-app.git" target="_blank"
                 rel="noopener noreferrer">
                 <div className="project-card__meta">
                   <span>03 / 07</span>
@@ -152,7 +152,7 @@ export default function Projects() {
                 </div>
               </a>
 
-              <a className="project-card" href="https://github.com/nethindu-2003" target="_blank"
+              <a className="project-card" href="https://github.com/nethindu-2003/FoundMe-backend.git" target="_blank"
                 rel="noopener noreferrer">
                 <div className="project-card__meta">
                   <span>04 / 07</span>
@@ -170,7 +170,7 @@ export default function Projects() {
                 </div>
               </a>
 
-              <a className="project-card" href="https://github.com/nethindu-2003" target="_blank"
+              <a className="project-card" href="https://github.com/nethindu-2003/Tour-Management-System-Java-MySQL.git" target="_blank"
                 rel="noopener noreferrer">
                 <div className="project-card__meta">
                   <span>05 / 07</span>
@@ -188,7 +188,7 @@ export default function Projects() {
                 </div>
               </a>
 
-              <a className="project-card" href="https://github.com/nethindu-2003" target="_blank"
+              <a className="project-card" href="https://github.com/nethindu-2003/Student-Registration-System.git" target="_blank"
                 rel="noopener noreferrer">
                 <div className="project-card__meta">
                   <span>06 / 07</span>
