@@ -6,7 +6,7 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const sections = ["about", "skills", "projects", "education", "contact"]
+    const sections = ["about", "skills", "projects", "education", "experience", "contact"]
       .map(id => document.getElementById(id))
       .filter(Boolean);
 
@@ -53,6 +53,7 @@ export default function Nav() {
           <a href="#skills" data-section="skills" className={activeSection === 'skills' ? 'is-active' : ''}>Skills</a>
           <a href="#projects" data-section="projects" className={activeSection === 'projects' ? 'is-active' : ''}>Projects</a>
           <a href="#education" data-section="education" className={activeSection === 'education' ? 'is-active' : ''}>Education</a>
+          <a href="#experience" data-section="experience" className={activeSection === 'experience' ? 'is-active' : ''}>Experience</a>
           <a href="#contact" data-section="contact" className={activeSection === 'contact' ? 'is-active' : ''}>Contact</a>
         </div>
 
@@ -85,6 +86,7 @@ export default function Nav() {
         <a href="#skills" onClick={closeMenu}>Skills</a>
         <a href="#projects" onClick={closeMenu}>Projects</a>
         <a href="#education" onClick={closeMenu}>Education</a>
+        <a href="#experience" onClick={closeMenu}>Experience</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
       </div>
     </>

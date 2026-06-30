@@ -5,7 +5,7 @@ export default function Contact() {
     <section className="section contact" id="contact">
       <div className="section__inner contact-grid">
         <div>
-          <p className="section-label reveal">05 — Contact</p>
+          <p className="section-label reveal">06 — Contact</p>
 
           <h2 className="contact-title reveal">
             Let’s build something useful.
