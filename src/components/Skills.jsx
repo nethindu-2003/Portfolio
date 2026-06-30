@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section className="section skills" id="skills">
       <div className="section__inner">
-        <p className="section-label reveal">02 — Capabilities</p>
+        <p className="section-label reveal">03 — Capabilities</p>
         <h2 className="section-title reveal">Core stack and technical focus.</h2>
 
         <div className="skills-grid reveal">

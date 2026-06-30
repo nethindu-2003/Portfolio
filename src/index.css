@@ -427,6 +427,17 @@ main {
     font-weight: 800;
 }
 
+.experience {
+    background: var(--bg);
+    color: var(--text);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.experience .section-label {
+    color: var(--muted);
+}
+
 .stats {
     margin-top: 2.5rem;
     display: grid;
@@ -461,21 +472,27 @@ main {
 }
 
 .skills {
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
+    background: var(--cream);
+    color: var(--ink);
+    border-top: 1px solid var(--cream-line);
+    border-bottom: 1px solid var(--cream-line);
+}
+
+.skills .section-label {
+    color: #6d675e;
 }
 
 .skills-grid {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border: 1px solid var(--line);
+    border: 1px solid var(--cream-line);
 }
 
 .skill-card {
     min-height: 280px;
     padding: 1.5rem;
-    border-right: 1px solid var(--line);
+    border-right: 1px solid var(--cream-line);
     display: flex;
     flex-direction: column;
     transition:
@@ -488,12 +505,12 @@ main {
 }
 
 .skill-card:hover {
-    background: rgba(242, 239, 232, 0.045);
+    background: rgba(10, 10, 10, 0.035);
     transform: translateY(-4px);
 }
 
 .skill-card__num {
-    color: var(--dim);
+    color: #7a746a;
     font-size: 0.68rem;
     font-weight: 800;
     letter-spacing: 0.2em;
@@ -518,7 +535,7 @@ main {
     display: flex;
     align-items: center;
     gap: 0.58rem;
-    color: var(--muted);
+    color: #4f4a43;
     font-size: 0.82rem;
     letter-spacing: 0.04em;
 }
@@ -532,8 +549,8 @@ main {
 }
 
 .projects {
-    background: var(--cream);
-    color: var(--ink);
+    background: var(--bg);
+    color: var(--text);
     padding: 0;
     position: relative;
 }
@@ -549,13 +566,13 @@ main {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background: var(--cream);
+    background: var(--bg);
 }
 
 .projects__top {
     min-height: 92px;
     padding: 1.3rem var(--pad);
-    border-bottom: 1px solid var(--cream-line);
+    border-bottom: 1px solid var(--line);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -570,7 +587,7 @@ main {
 }
 
 .projects__hint {
-    color: #777067;
+    color: var(--muted);
     font-size: 0.68rem;
     font-weight: 800;
     letter-spacing: 0.18em;
@@ -595,8 +612,8 @@ main {
     width: min(520px, 84vw);
     flex: 0 0 auto;
     padding: clamp(1.4rem, 4vw, 3rem);
-    border-right: 1px solid var(--cream-line);
-    color: var(--ink);
+    border-right: 1px solid var(--line);
+    color: var(--text);
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -623,7 +640,7 @@ main {
 }
 
 .project-card:hover {
-    background: #e9e4da;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .project-card:hover::after {
@@ -634,7 +651,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    color: #777067;
+    color: var(--muted);
     font-size: 0.68rem;
     font-weight: 800;
     letter-spacing: 0.18em;
@@ -652,7 +669,7 @@ main {
 
 .project-card p {
     max-width: 430px;
-    color: #4f4a43;
+    color: var(--muted);
     font-size: 0.95rem;
     line-height: 1.75;
     margin-top: 1rem;
@@ -663,18 +680,18 @@ main {
     flex-wrap: wrap;
     gap: 0.45rem;
     padding-top: 1.1rem;
-    border-top: 1px solid var(--cream-line);
+    border-top: 1px solid var(--line);
 }
 
 .chip {
     display: inline-flex;
     align-items: center;
     gap: 0.42rem;
-    border: 1px solid #cbc4b8;
+    border: 1px solid var(--line);
     border-radius: 999px;
     padding: 0.45rem 0.65rem;
-    color: #4d4840;
-    background: rgba(255, 255, 255, 0.18);
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.03);
     font-size: 0.66rem;
     font-weight: 800;
     letter-spacing: 0.08em;
@@ -684,23 +701,29 @@ main {
 .projects__progress {
     height: 2px;
     margin: 0 var(--pad) 1.4rem;
-    background: var(--cream-line);
+    background: var(--line);
 }
 
 .projects__progress span {
     display: block;
     width: 0%;
     height: 100%;
-    background: var(--ink);
+    background: var(--green);
 }
 
 .education {
-    border-bottom: 1px solid var(--line);
+    background: var(--cream);
+    color: var(--ink);
+    border-bottom: 1px solid var(--cream-line);
+}
+
+.education .section-label {
+    color: #6d675e;
 }
 
 .timeline {
     margin-top: 3rem;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--cream-line);
 }
 
 .timeline-item {
@@ -708,7 +731,7 @@ main {
     grid-template-columns: 1fr 180px;
     gap: 2rem;
     padding: 1.7rem 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--cream-line);
 }
 
 .timeline-item h3 {
@@ -718,12 +741,12 @@ main {
 }
 
 .timeline-item p {
-    color: var(--muted);
+    color: #4f4a43;
     margin-top: 0.35rem;
 }
 
 .timeline-item time {
-    color: var(--muted);
+    color: #6d675e;
     font-size: 0.72rem;
     font-weight: 800;
     letter-spacing: 0.16em;
@@ -733,12 +756,12 @@ main {
 }
 
 .contact {
-    background: var(--cream);
-    color: var(--ink);
+    background: var(--bg);
+    color: var(--text);
 }
 
 .contact .section-label {
-    color: #6d675e;
+    color: var(--muted);
 }
 
 .contact-grid {
@@ -771,14 +794,14 @@ main {
 
 .contact-links a {
     text-decoration: none;
-    border: 1px solid var(--cream-line);
+    border: 1px solid var(--line);
     border-radius: 999px;
     padding: 0.85rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    color: var(--ink);
+    color: var(--text);
     transition:
         background 0.2s ease,
         border-color 0.2s ease,
@@ -786,8 +809,8 @@ main {
 }
 
 .contact-links a:hover {
-    background: #e9e4da;
-    border-color: #c7bfb3;
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--line);
     transform: translateX(4px);
 }
 
@@ -803,7 +826,7 @@ main {
 }
 
 .contact-links span:last-child {
-    color: #6d675e;
+    color: var(--muted);
     font-size: 0.72rem;
     font-weight: 800;
     letter-spacing: 0.16em;
@@ -814,18 +837,18 @@ main {
 .info-list {
     display: grid;
     gap: 1rem;
-    border-top: 1px solid var(--cream-line);
+    border-top: 1px solid var(--line);
 }
 
 .info-item {
     padding-top: 1rem;
-    border-bottom: 1px solid var(--cream-line);
+    border-bottom: 1px solid var(--line);
     padding-bottom: 1rem;
 }
 
 .info-item small {
     display: block;
-    color: #6d675e;
+    color: var(--muted);
     font-size: 0.68rem;
     font-weight: 800;
     letter-spacing: 0.18em;
@@ -836,6 +859,7 @@ main {
 .info-item strong {
     font-size: 1rem;
     font-weight: 650;
+    color: var(--text);
 }
 
 footer {

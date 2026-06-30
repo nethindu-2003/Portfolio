@@ -90,7 +90,7 @@ export default function Projects() {
         <div className="projects__sticky">
           <div className="projects__top fade-scroll" id="projectsTop" ref={topRef}>
             <div>
-              <p className="section-label">03 — Projects</p>
+              <p className="section-label">04 — Projects</p>
               <h2 className="projects__title">Selected GitHub work.</h2>
             </div>
             <p className="projects__hint">Scroll down to move sideways</p>

@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <section className="section education" id="education">
       <div className="section__inner">
-        <p className="section-label reveal">04 — Education</p>
+        <p className="section-label reveal">05 — Education</p>
         <h2 className="section-title reveal">Academic path.</h2>
 
         <div className="timeline reveal">

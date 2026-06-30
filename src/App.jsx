@@ -45,10 +45,10 @@ function App() {
       <main id="main">
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Education />
-        <Experience />
         <Contact />
       </main>
       <Footer />
